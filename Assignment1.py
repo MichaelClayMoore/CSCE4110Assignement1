@@ -7,6 +7,7 @@ from timSort import TimSort
 from radix import radixsort
 
 from rbtrees import RedBlackTree
+from AVL import AVL
 
 def testQuickSort(trial_amount):
     trial_times_for_unique = []
@@ -388,14 +389,14 @@ def writeDataToCSV(csv_name, data_to_write):
 
         csv.write('\n\n')
 
-NumberOfTrials = 50;
-csv_name = 'data2.csv'
-formatCSVForNTrials(csv_name,NumberOfTrials);
-quickSort_trials = testQuickSort(NumberOfTrials);
-writeDataToCSV(csv_name, quickSort_trials)
-modifiedquickSort_trials = testModifiedQuickSort(NumberOfTrials);
-writeDataToCSV(csv_name, modifiedquickSort_trials)
-radixSort_trials = testRadixSort(NumberOfTrials);
-writeDataToCSV(csv_name, radixSort_trials)
-timSort_trials = testTimSort(NumberOfTrials);
-writeDataToCSV(csv_name, timSort_trials)
+# NumberOfTrials = 50;
+# csv_name = 'data2.csv'
+# formatCSVForNTrials(csv_name,NumberOfTrials);
+# quickSort_trials = testQuickSort(NumberOfTrials);
+# writeDataToCSV(csv_name, quickSort_trials)
+# modifiedquickSort_trials = testModifiedQuickSort(NumberOfTrials);
+# writeDataToCSV(csv_name, modifiedquickSort_trials)
+# radixSort_trials = testRadixSort(NumberOfTrials);
+# writeDataToCSV(csv_name, radixSort_trials)
+# timSort_trials = testTimSort(NumberOfTrials);
+# writeDataToCSV(csv_name, timSort_trials)
